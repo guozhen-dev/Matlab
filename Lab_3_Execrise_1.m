@@ -1,3 +1,7 @@
 clear all ;
-clc ; 
-fprintf ('hello\n %d \n world\n', 8+9);
+syms t ;
+h(t) = -2*(t-2)^3+3*(t-2)+1 ;
+hp = diff(h)
+hold on ;
+fplot(h(t),[0 4]);
+fplot(hp(t),[0 4]);
