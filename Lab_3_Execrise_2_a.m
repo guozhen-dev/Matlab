@@ -5,10 +5,10 @@ summ4 = 0;
 summ8 = 0;
 t4 = 0 ;
 t8 = 0 ;
-for i= 0:4
+for i= 1:4
     summ4 = summ4 + f(i)*1;
 end
-for i=0:8
+for i=1:8
     summ8 = summ8 + f(i*0.5)*0.5;
 end
 fprintf('using 4 subintervals: %f\n',summ4);
