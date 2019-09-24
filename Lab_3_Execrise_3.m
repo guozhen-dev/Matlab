@@ -1,0 +1,10 @@
+clear all; clc ; 
+syms t ;
+A = 14.4;
+b = 2.72 ;
+v(t) = A*(1-exp(-t/b));
+s = int (v,t);
+fplot(s,[0,15]);
+time = solve(s == 100 , t);
+fprintf('The time needed is: %f', time);
+fprintf('\nThe instantaneous speed is: %f\n', v(time)*3.6);
