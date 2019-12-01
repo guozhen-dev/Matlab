@@ -1,3 +1,0 @@
-clear all; clc;
-load ecg1.mat;
-plot(time(1:5,:),ecg);
